@@ -1,3 +1,5 @@
+import React from "react";
+
 export const Hero = ({ title, image }) => {
     return (
         <div className="flex row justify-center items-center gap-4 h-screen">

@@ -1,3 +1,5 @@
+import React from "react";
+
 export const ItemsShowcase = ({ items }) => {
     return (
         <div className="flex justify-center items-center">

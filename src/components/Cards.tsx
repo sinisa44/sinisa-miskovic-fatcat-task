@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 
 import { Button } from './Button.jsx';
+import React from 'react';
 
 export const Cards = ({ cards }) => {
     return (
