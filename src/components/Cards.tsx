@@ -3,7 +3,17 @@ import clsx from 'clsx';
 import { Button } from './Button.jsx';
 import React from 'react';
 
-export const Cards = ({ cards }) => {
+type CarsProps = {
+    cards:  {
+        title: string;
+        image: string;
+        description: string;
+        background: string;
+        onClick: () => void;
+        buttonText: string;
+    }[] ;
+}
+export const Cards: React.FC<CarsProps> = ({ cards }) => {
     return (
         <div className={clsx('flex', 'justify-center', 'items-center')}>
             <div className={clsx('grid', 'grid-cols-2', 'gap-8', 'w-8/12')}>

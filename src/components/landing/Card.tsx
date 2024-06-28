@@ -1,7 +1,14 @@
 import clsx from 'clsx';
 import React from 'react';
 
-export const Card = ({ title, text, link }) => (
+type CardProps = {
+    title: string;
+    text: string;
+    link: string;
+
+}
+
+export const Card: React.FC<CardProps> = ({ title, text, link }) => (
     <div
         className={clsx(
             'flex',
